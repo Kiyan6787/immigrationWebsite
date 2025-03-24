@@ -2,10 +2,28 @@
 import React from 'react';
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
+import SEO from "@/components/SEO";
+import JsonLd from "@/components/JsonLd";
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Our Practice"
+        description="Learn about Ramjanum C Attorneys, our history, values, mission and legal expertise in South African immigration law."
+        canonicalUrl="https://ramjanumattorneys.com/about"
+        keywords="immigration lawyer south africa, about ramjanum attorneys, legal expertise, south african law firm"
+      />
+      <JsonLd 
+        type="Article" 
+        data={{
+          headline: "About Ramjanum C Attorneys - Immigration Law Firm",
+          authorName: "Chantal Ramjanum",
+          datePublished: "2023-08-01",
+          dateModified: "2023-08-01"
+        }} 
+      />
+      
       <Navigation />
       
       {/* Hero Section */}

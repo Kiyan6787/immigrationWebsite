@@ -1,6 +1,8 @@
 
 import { Navigation } from "../../components/Navigation";
 import { Footer } from "../../components/Footer";
+import SEO from "@/components/SEO";
+import JsonLd from "@/components/JsonLd";
 
 const Immigration = () => {
   const services = [
@@ -15,6 +17,21 @@ const Immigration = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Immigration & Emigration Services"
+        description="Comprehensive immigration and emigration legal services in South Africa including visa applications, permanent residence, work permits and more."
+        canonicalUrl="https://ramjanumattorneys.com/services/immigration"
+        keywords="south africa immigration, visa application, permanent residence, work permit, study permit, business visa, citizenship"
+      />
+      <JsonLd 
+        type="LegalService" 
+        data={{
+          name: "Ramjanum C Attorneys - Immigration Services",
+          description: "Comprehensive immigration and emigration legal services in South Africa",
+          serviceType: "Immigration Law"
+        }} 
+      />
+      
       <Navigation />
       
       <div className="pt-20 pb-16 bg-gray-50">

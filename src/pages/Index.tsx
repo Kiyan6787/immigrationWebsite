@@ -1,4 +1,3 @@
-
 import { Navigation } from "../components/Navigation";
 import { Hero } from "../components/Hero";
 import { ServiceCard } from "../components/ServiceCard";
@@ -7,6 +6,8 @@ import { Footer } from "../components/Footer";
 import { Briefcase, Scale, Users, KeyRound, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Contact from "@/components/Contact";
+import SEO from "@/components/SEO";
+import JsonLd from "@/components/JsonLd";
 
 const Index = () => {
   const services = [
@@ -38,8 +39,23 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <Navigation />
+      <SEO 
+        title="Ramjanum C Attorneys - Immigration Law Firm"
+        description="Expert legal services for immigration, litigation, family law and bail applications in South Africa."
+        keywords="immigration lawyer, South Africa immigration, visa application, work permit, permanent residency, legal services"
+      />
+      <JsonLd 
+        type="LegalService" 
+        data={{
+          name: "Ramjanum C Attorneys",
+          description: "Professional Immigration Law Services in South Africa",
+          telephone: "+27 76 924 2726",
+          email: "cramjanum@gmail.com",
+          serviceType: "Immigration Law, Litigation, Family Law, Bail Applications"
+        }} 
+      />
       
+      <Navigation />
       <Hero />
 
       {/* About Section */}
@@ -92,7 +108,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
 
       {/* Contact Section */}
       <section id="contact" className="py-20">
