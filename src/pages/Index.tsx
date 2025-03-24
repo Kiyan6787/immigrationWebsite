@@ -4,7 +4,8 @@ import { Hero } from "../components/Hero";
 import { ServiceCard } from "../components/ServiceCard";
 import { TestimonialCarousel } from "../components/TestimonialCarousel";
 import { Footer } from "../components/Footer";
-import { Briefcase, Scale, Users, KeyRound } from 'lucide-react';
+import { Briefcase, Scale, Users, KeyRound, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const services = [
@@ -46,13 +47,16 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">About Us</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-gray-600 mb-6">
-              With years of experience in South African immigration law, we provide expert legal services
+              With over 15 years of experience in South African immigration law, our firm provides expert legal services
               to individuals and families seeking to navigate the complex immigration system.
             </p>
-            <p className="text-lg text-gray-600">
-              Our dedicated team ensures personalized attention to each case, delivering professional
-              and efficient solutions for all your immigration needs.
-            </p>
+            <Link 
+              to="/about" 
+              className="inline-flex items-center text-primary font-medium hover:underline"
+            >
+              Learn more about our practice
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
