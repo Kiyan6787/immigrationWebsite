@@ -13,13 +13,13 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Sarah Johnson",
-    text: "Excellent service! Made the immigration process smooth and stress-free.",
+    text: "I cannot thank Ramjanum C Attorney enough for their incredible support in helping my mom secure her Spousal Visa. The process was incredibly hectic, as her Spousal Visa expired during COVID, and due to a lack of knowledge, we mistakenly applied for permanent residency before the 5-year requirement was met. As a result, my mom was banned from entering South Africa. But Ramjanum C Attorney came to our rescue, guiding us through the legal complexities and helping us fight against Home Affairs in court. She also worked tirelessly to have the border ban at Bait Bridge South African side lifted. Thanks to her expertise and dedication, everything was handled seamlessly, and my mom has now received a two-year Spousal Visa. We are now in the process of gathering the necessary documents to apply for her permanent residency in time. Ramjanum C Attorney Associates truly are the best, and I would highly recommend them to anyone in need of immigration assistance. Their professionalism and care made all the difference!",
     rating: 5
   },
   {
     id: 2,
-    name: "Michael Chen",
-    text: "Very professional and knowledgeable. Highly recommend their services.",
+    name: "Sijabulison Komo",
+    text: "She provided exceptional assistance with my visa application process, helping me change my status seamlessly. Thanks to her expertise, my visa was approved within just seven days, and I collected it in three weeks. Her kindness, professionalism, and well-organized approach made the entire experience stress-free. She ensured I understood every step of the process, leaving me feeling confident and at ease. I highly recommend her services to anyone seeking efficient and reliable legal assistance.",
     rating: 5
   },
   {
