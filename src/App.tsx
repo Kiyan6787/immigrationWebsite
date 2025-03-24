@@ -1,9 +1,15 @@
+
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Index from "./pages/Index";
+import Immigration from "./pages/services/Immigration";
+import Litigation from "./pages/services/Litigation";
+import Family from "./pages/services/Family";
+import Bail from "./pages/services/Bail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,7 +22,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/services/immigration" element={<Immigration />} />
+          <Route path="/services/litigation" element={<Litigation />} />
+          <Route path="/services/family" element={<Family />} />
+          <Route path="/services/bail" element={<Bail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
