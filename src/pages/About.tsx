@@ -9,7 +9,7 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="bg-gray-900 text-white py-16">
+      <div className="bg-gray-900 text-white py-16 mt-5">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl font-bold mb-4">About Our Practice</h1>
           <p className="text-xl max-w-3xl">
@@ -35,10 +35,9 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-[400px] flex items-center justify-center">
+          <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-[600px] flex items-center justify-center">
             <div className="text-gray-500 text-center p-8">
-              <p className="text-lg font-medium">Professional Lawyer Image</p>
-              <p className="text-sm">(Image placeholder)</p>
+              <img src='public\profile-img.jpg'/>
             </div>
           </div>
         </div>
@@ -73,22 +72,21 @@ const About = () => {
             <div className="flex flex-col md:flex-row gap-8">
               <div className="bg-gray-200 rounded-full overflow-hidden h-64 w-64 mx-auto md:mx-0 flex items-center justify-center">
                 <div className="text-gray-500 text-center p-8">
-                  <p>Attorney Photo</p>
-                  <p className="text-sm">(Photo placeholder)</p>
+                  <img src='public\profile-img.jpg'/>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">John Doe, Esq.</h3>
+                <h3 className="text-xl font-semibold mb-2">Chantal Ramjanum</h3>
                 <p className="text-gray-500 mb-4">Principal Attorney</p>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    With over 15 years of experience specializing in South African immigration law, John Doe has established himself as a trusted legal expert in the field.
+                    With multiple years of experience specializing in South African immigration law, Chantal Ramjanum has established herself as a trusted legal expert in the field.
                   </p>
                   <p>
-                    John graduated with honors from the University of Cape Town Law School and holds a Master's degree in International Law from the University of Witwatersrand. His academic background, combined with extensive practical experience, provides him with a comprehensive understanding of both the legal and humanitarian aspects of immigration law.
+                    Chantal graduated from the Unisa and holds a LLB. Her academic background, combined with extensive practical experience, provides her with a comprehensive understanding of both the legal and humanitarian aspects of immigration law.
                   </p>
                   <p>
-                    Throughout his career, John has successfully represented clients in various immigration matters, from routine visa applications to complex deportation defense cases. His dedication to his clients and his passion for immigration law drives him to stay current with the ever-evolving immigration policies and regulations.
+                    Throughout her career, Chantal has successfully represented clients in various immigration matters, from routine visa applications to complex deportation defense cases. Her dedication to her clients and her passion for immigration law drives her to stay current with the ever-evolving immigration policies and regulations.
                   </p>
                 </div>
               </div>

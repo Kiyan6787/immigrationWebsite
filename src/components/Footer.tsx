@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Immigration Law Firm</h3>
+            <h3 className="text-xl font-semibold mb-4">Ramjanum C Attorneys</h3>
             <p className="text-gray-300">
               Professional legal services for all your immigration needs in South Africa.
             </p>
@@ -17,11 +17,11 @@ export const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center gap-2">
                 <Phone size={18} />
-                <span>+27 XX XXX XXXX</span>
+                <span>076 924 2726</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail size={18} />
-                <span>contact@example.com</span>
+                <span>cramjanum@gmail.com</span>
               </p>
               <p className="flex items-center gap-2">
                 <MapPin size={18} />
@@ -33,10 +33,7 @@ export const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+                <a href="https://www.freeprivacypolicy.com/live/975d3d21-145a-45eb-9095-2626e1a9cba0" className="hover:text-primary transition-colors">Privacy Policy</a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-primary transition-colors">Contact Us</a>
@@ -46,7 +43,7 @@ export const Footer = () => {
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Immigration Law Firm. All rights reserved.
+            © {new Date().getFullYear()} Ramjanum C Attorneys. All rights reserved.
           </p>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { TestimonialCarousel } from "../components/TestimonialCarousel";
 import { Footer } from "../components/Footer";
 import { Briefcase, Scale, Users, KeyRound, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Contact from "@/components/Contact";
 
 const Index = () => {
   const services = [
@@ -47,7 +48,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">About Us</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-gray-600 mb-6">
-              With over 15 years of experience in South African immigration law, our firm provides expert legal services
+              With multiple years of experience in South African immigration law, our firm provides expert legal services
               to individuals and families seeking to navigate the complex immigration system.
             </p>
             <Link 
@@ -77,33 +78,25 @@ const Index = () => {
       <section id="testimonials" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
+          
+          {/* Testimonial Carousel */}
           <TestimonialCarousel />
+
+          {/* Add Testimonial Button */}
+          <div className="mt-8 text-center">
+            <a href="https://us13.list-manage.com/survey?u=dca9b1b4b46ff9e41c70ed938&id=898f7d15fe&attribution=false" target="_blank">
+              <button className="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition">
+                Add Your Testimonial
+              </button>
+            </a>
+          </div>
         </div>
       </section>
 
+
       {/* Contact Section */}
       <section id="contact" className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
-          <div className="max-w-xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <p className="text-center text-gray-600 mb-8">
-                Get in touch with us for professional legal assistance.
-              </p>
-              <div className="space-y-4 text-center">
-                <p className="text-lg">
-                  Email: contact@example.com
-                </p>
-                <p className="text-lg">
-                  Phone: +27 XX XXX XXXX
-                </p>
-                <p className="text-lg">
-                  Address: Johannesburg, South Africa
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Contact/>
       </section>
 
       <Footer />
