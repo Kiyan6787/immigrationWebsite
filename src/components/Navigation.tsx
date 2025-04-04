@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
@@ -37,6 +37,28 @@ export const Navigation = () => {
             <a href="#contact" className="text-gray-900 hover:text-primary transition-colors">
               Contact
             </a>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-3">
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,6 +100,28 @@ export const Navigation = () => {
               onClick={toggleMenu}>
               Contact
             </a>
+            
+            {/* Social Media Links for Mobile */}
+            <div className="flex items-center space-x-4 px-3 py-2">
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-600 hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
         </div>
       )}

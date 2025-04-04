@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Facebook } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -11,6 +11,27 @@ export const Footer = () => {
             <p className="text-gray-300">
               Professional legal services for all your immigration needs in South Africa.
             </p>
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-4 mt-4">
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-300 hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={20} />
+              </a>
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-300 hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
@@ -37,6 +58,12 @@ export const Footer = () => {
               </li>
               <li>
                 <a href="#contact" className="hover:text-primary transition-colors">Contact Us</a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Facebook</a>
               </li>
             </ul>
           </div>
