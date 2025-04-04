@@ -53,7 +53,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-[600px] flex items-center justify-center">
+          <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg h-[600px] hidden md:flex items-center justify-center">
             <div className="text-gray-500 text-center p-8">
               <img src='public\profile-img.jpg'/>
             </div>

@@ -33,7 +33,7 @@ export const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://www.freeprivacypolicy.com/live/975d3d21-145a-45eb-9095-2626e1a9cba0" className="hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="https://www.freeprivacypolicy.com/live/975d3d21-145a-45eb-9095-2626e1a9cba0" target='_blank' className="hover:text-primary transition-colors">Privacy Policy</a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-primary transition-colors">Contact Us</a>
