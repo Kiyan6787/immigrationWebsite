@@ -63,68 +63,69 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-gray-900">
+            <button onClick={toggleMenu} className="text-gray-900 transition-transform duration-200">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-white/90 backdrop-blur-md border-b border-gray-200">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link to="/" 
-              className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
-              onClick={toggleMenu}>
-              Home
-            </Link>
-            <a href="#about" 
-              className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
-              onClick={toggleMenu}>
-              About
+      <div className={`md:hidden absolute top-16 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 transition-all duration-300 ease-in-out ${
+        isOpen 
+          ? 'opacity-100 translate-y-0 visible' 
+          : 'opacity-0 -translate-y-2 invisible'
+      }`}>
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          <Link to="/" 
+            className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
+            onClick={toggleMenu}>
+            Home
+          </Link>
+          <a href="#about" 
+            className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
+            onClick={toggleMenu}>
+            About
+          </a>
+          <a href="#services" 
+            className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
+            onClick={toggleMenu}>
+            Services
+          </a>
+          <a href="#testimonials" 
+            className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
+            onClick={toggleMenu}>
+            Testimonials
+          </a>
+          <a href="#contact" 
+            className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
+            onClick={toggleMenu}>
+            Contact
+          </a>
+          
+          {/* Social Media Links for Mobile */}
+          <div className="flex items-center space-x-4 px-3 py-2">
+            <a 
+              href="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-600 hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
             </a>
-            <a href="#services" 
-              className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
-              onClick={toggleMenu}>
-              Services
+            <a 
+              href="https://facebook.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-600 hover:text-primary transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} />
             </a>
-            <a href="#testimonials" 
-              className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
-              onClick={toggleMenu}>
-              Testimonials
-            </a>
-            <a href="#contact" 
-              className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors"
-              onClick={toggleMenu}>
-              Contact
-            </a>
-            
-            {/* Social Media Links for Mobile */}
-            <div className="flex items-center space-x-4 px-3 py-2">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-600 hover:text-primary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-600 hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-            </div>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
