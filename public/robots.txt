@@ -2,17 +2,46 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ramjanumattorneys.com/sitemap.xml
+# Block access to admin areas (if any exist in future)
+Disallow: /admin/
+Disallow: /private/
 
-# Allow bots to access specific content
+# Allow specific bots
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: LinkedInBot
 Allow: /
+
+# Sitemap location
+Sitemap: https://ramjanumattorneys.com/sitemap.xml
+
+# Host directive (helps with canonicalization)
+Host: https://ramjanumattorneys.com
